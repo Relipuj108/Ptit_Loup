@@ -1,1 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Galerie P'tit Loup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="brand-badge">🐺</div>
+        <div>
+          <div class="brand-title">Galerie P'tit Loup</div>
+          <div class="brand-sub">Sélection visuelle des livres</div>
+        </div>
+      </div>
 
+      <div class="mode-chip">
+        Mode : <b id="modeChip">Lecture</b>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <div class="panel-title">Sélection des livres</div>
+
+      <div class="auth-row">
+        <div class="auth-field">
+          <label for="passwordInput">Mot de passe</label>
+          <input type="text" id="passwordInput" placeholder="Louise">
+        </div>
+
+        <button id="unlockBtn">Valider</button>
+        <span id="authStatus">Lecture seule</span>
+      </div>
+
+      <div id="status" class="status">Prêt.</div>
+    </section>
+
+    <section class="gallery-section">
+      <div id="gallery" class="gallery"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

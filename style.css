@@ -286,10 +286,6 @@ button#unlockBtn{
     gap: 12px;
   }
 
-  .book-card__body{
-    padding: 10px;
-  }
-
   .book-card__title{
     font-size: 12px;
   }

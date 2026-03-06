@@ -226,6 +226,10 @@ button#unlockBtn{
   position: relative;
   overflow: hidden;
 }
+/* fond vert clair quand sélectionné */
+.book-card.is-selected .book-card__body{
+  background: #d1fae5;   /* vert clair */
+}
 
 .book-card__image{
   width: 100%;

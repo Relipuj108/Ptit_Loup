@@ -1,1 +1,17 @@
-
+[
+  {
+    "id": "img-001",
+    "title": "P'tit Loup va à l'école",
+    "image": "./images/img-001.jpg"
+  },
+  {
+    "id": "img-002",
+    "title": "P'tit Loup aime son doudou",
+    "image": "./images/img-002.jpg"
+  },
+  {
+    "id": "img-003",
+    "title": "P'tit Loup ne veut pas ranger",
+    "image": "./images/img-003.jpg"
+  }
+]

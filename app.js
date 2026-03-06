@@ -103,7 +103,10 @@ function createCard(item, state) {
   const card = document.createElement("article");
   card.className = "book-card";
   if (!isWriteEnabled) card.classList.add("is-readonly");
-  if (selected) card.classList.add("is-selected");
+  if (selected) {
+    card.classList.add("is-selected");
+    card.classList.add("is-confirmed");
+  }
 
   const imageWrap = document.createElement("div");
   imageWrap.className = "book-card__image-wrap";
@@ -135,14 +138,37 @@ function createCard(item, state) {
   card.addEventListener("click", async () => {
     if (!isWriteEnabled) return;
 
-    const willSelect = !card.classList.contains("is-selected");
+    const wasSelected = card.classList.contains("is-selected");
+    const willSelect = !wasSelected;
+
+    // ✅ feedback immédiat
+    card.classList.toggle("is-selected", willSelect);
+    card.classList.remove("is-confirmed");
+    card.classList.add("is-pending");
 
     try {
       setStatus("Sauvegarde…");
-      await apiWriteSelection({ id: item.id, selected: willSelect });
-      card.classList.toggle("is-selected", willSelect);
+
+      await apiWriteSelection({
+        id: item.id,
+        selected: willSelect
+      });
+
+      // ✅ confirmation DB
+      card.classList.remove("is-pending");
+      if (willSelect) {
+        card.classList.add("is-confirmed");
+      } else {
+        card.classList.remove("is-confirmed");
+      }
+
       setStatus("Enregistré ✅");
     } catch (err) {
+      // ❌ rollback si erreur
+      card.classList.remove("is-pending");
+      card.classList.toggle("is-selected", wasSelected);
+      card.classList.toggle("is-confirmed", wasSelected);
+
       setStatus("Erreur : " + err.message, true);
     }
   });

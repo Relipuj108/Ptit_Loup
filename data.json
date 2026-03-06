@@ -25,8 +25,8 @@
   { "id": "img-024", "title": "P’tit Loup se lave tout seul", "image": "./images/img-024.webp" },
   { "id": "img-025", "title": "P’tit Loup ne veut pas ranger", "image": "./images/img-025.webp" },
   { "id": "img-026", "title": "P’tit Loup se déguise", "image": "./images/img-026.webp" },
-  { "id": "img-027", "title": "P’tit Loup aime sa petite sœur", "image": "./images/img-027.webp" },
-  { "id": "img-028", "title": "P’tit Loup ne veut pas dormir", "image": "./images/img-028.webp" },
+  { "id": "img-027", "title": "P’tit Loup ne veut pas dormir", "image": "./images/img-027.webp" },
+  { "id": "img-028", "title": "P’tit Loup aime sa petite sœur", "image": "./images/img-028.webp" },
   { "id": "img-029", "title": "P’tit Loup sauve la planète", "image": "./images/img-029.webp" },
   { "id": "img-030", "title": "P’tit Loup fait du vélo", "image": "./images/img-030.webp" },
   { "id": "img-031", "title": "P’tit Loup aime son papa", "image": "./images/img-031.webp" },
@@ -44,5 +44,13 @@
   { "id": "img-043", "title": "P’tit Loup découvre les saisons", "image": "./images/img-043.webp" },
   { "id": "img-044", "title": "P’tit Loup prend l’avion", "image": "./images/img-044.webp" },
   { "id": "img-045", "title": "P’tit Loup va au ski", "image": "./images/img-045.webp" },
-  { "id": "img-046", "title": "P’tit Loup fait du camping", "image": "./images/img-046.webp" }
+  { "id": "img-046", "title": "P’tit Loup fait du camping", "image": "./images/img-046.webp" },
+  { "id": "img-047", "title": "P’tit Loup va à l’hôpital", "image": "./images/img-047.webp" },
+  { "id": "img-048", "title": "P’tit Loup a un bobo", "image": "./images/img-048.webp" },
+  { "id": "img-049", "title": "P’tit Loup se brosse les dents", "image": "./images/img-049.webp" },
+  { "id": "img-050", "title": "P’tit Loup fait une colère", "image": "./images/img-050.webp" },
+  { "id": "img-051", "title": "P’tit Loup est poli", "image": "./images/img-051.webp" },
+  { "id": "img-052", "title": "P’tit Loup ne met plus de couches", "image": "./images/img-052.webp" },
+  { "id": "img-053", "title": "P’tit Loup est le roi de la galette", "image": "./images/img-053.webp" },
+  { "id": "img-054", "title": "P’tit Loup attend le Père Noël", "image": "./images/img-054.webp" }
 ]

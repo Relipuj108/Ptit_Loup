@@ -1,5 +1,5 @@
 
-const API_URL = "https://script.google.com/macros/s/AKfycbyN6mvDEeRKzmA-dlp7M4ADqvzEwWHDgLhuPC1NtzvBVvwoXj5WIA7-neaxqecvfzBwSQ/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbzkBYjfl0WqeLmYIbDEVwBSzk7H6hm-i7Ji4yuGyYtuVJNXtNfP5Ov_RWsQRN236DGL/exec";
 const DATA_JSON = "./data.json";
 const EXPECTED_PW = "louise";
 
